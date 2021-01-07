@@ -12,8 +12,17 @@ import { exercise01Task } from "./main";
  *
  * You can use jQuery to create the element
  */
+
 function exercise01() {
   // Complete the code of the function
+  exercise01Task(hola);
+  function hola() {
+    let p = document.createElement("p");
+    p.innerHTML = `exercise-01 is done`;
+    p.classList.add("exercise-01");
+
+    $(".ex-container").append(p);
+  }
 }
 
 export default exercise01;

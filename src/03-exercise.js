@@ -26,6 +26,19 @@ import { exercise03Task } from "./main";
  */
 function exercise03() {
   // Complete the code of the function
+  exercise03Task(e3);
+}
+
+function e3(error, message){
+  let p=document.createElement('p');
+  if(error!=null){
+    p.innerHTML=error.message;
+  }else{
+    p.innerHTML=message;
+  }
+  p.classList.add('exercise-03');
+  $('.ex-container').append(p);
+
 }
 
 export default exercise03;

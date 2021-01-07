@@ -16,6 +16,16 @@ import { exercise02Task } from "./main";
  */
 function exercise02() {
   // Complete the code of the function
+  exercise02Task(e2);
+  
+}
+
+function e2(result){
+  let p=document.createElement('p');
+  p.innerHTML=result;
+  p.classList.add('exercise-02');
+
+  $('.ex-container').append(p);
 }
 
 export default exercise02;

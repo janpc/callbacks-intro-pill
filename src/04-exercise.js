@@ -5,6 +5,7 @@
  */
 function exercise04() {
   // Complete the code of the function
+  setTimeout(function(){},1000);
 }
 
 export default exercise04;
